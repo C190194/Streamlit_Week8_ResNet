@@ -1,0 +1,9 @@
+layer name,structure,output size
+input,-,3 * 224 * 224
+conv1,"7*7, 64, stride 2",112 * 112 * 64
+conv2,"[3*3, 64] * 2, stride 1",56 * 56 * 64
+conv3,"[3*3, 128] * 2, stride 1",28 * 28 * 128
+conv4,"[3*3, 256] * 2, stride 1",14 * 14 * 256
+conv5,"[3*3, 512] * 2, stride 1",7 * 7 * 512
+avg pool,adaptive average pool,1 * 1 * 512
+linear,"512 → 1000 linear, softmax",1000

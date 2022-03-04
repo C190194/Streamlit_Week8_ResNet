@@ -1,0 +1,10 @@
+layer name,structure,output size
+input,-,313 * 128
+conv1,"7*7, 64, stride 2",157 * 64 * 64
+conv2,"[3*3, 64] * 2, stride 1",78 * 32 * 64
+conv3,"[3*3, 128] * 2, stride 1",39 * 16 * 128
+conv4,"[3*3, 256] * 2, stride 1",20 * 8 * 256
+conv5,"[3*3, 512] * 2, stride 1",10 * 4 * 512
+max pool,"10 * 1, stride 1",1 * 4 * 512
+flatten,-,2048
+linear,2048 → 512 linear,512

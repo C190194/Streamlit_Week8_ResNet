@@ -57,7 +57,7 @@ elif select_slide == "Isolation Forest":
         each row, which will be used for computing the AUC and pAUC values.")
     
 elif select_slide == "Results":
-    st.subheader("Best Results for OC-SVM and GMM using Fan's Development Dataset") 
+    st.subheader("Best Results for Modified ResNet18 and Isolation Forest using Fan's Development Dataset") 
     result_df = pd.read_csv('Results.csv')
     col_ref = {'Baseline 1:': 'background-color: #ffec8c', 
             'Autoencoder': 'background-color: #ffec8c', 
